@@ -1,0 +1,137 @@
+<html>
+    <head>
+    <title>Hello world!</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <style>
+            
+            .status {
+                display: flex;
+                background: #523737;
+                justify-content: space-between;
+                align-items: center;
+                color: #fff;
+                height: 40px;
+                padding: 0px 8px;
+            }  
+            
+                .menu33 {
+                    width: 33%;
+                }
+
+                .menu2 {
+                    text-align: center;
+                }
+
+                .menu3 {
+                    text-align: right;
+                }
+            
+            .app-bar {
+                display: flex;
+                background: #523737;
+                justify-content: space-between;
+                align-items: center;
+                color: #fff;
+                height: 40px;
+                padding: 0px 16px;
+                font-size: 20px;
+            }  
+                .inactive {
+                    opacity: 0.4;
+                }
+
+                .button2 {
+                    text-align: center;
+                }
+
+                .button3 {
+                    text-align: right;
+                }
+            
+            
+            .tab-bar {
+                display: flex;
+                background: #fafafa;
+                /*왜 안되는거임? ㅡㅅㅡ*/border-top: 10px;
+                justify-content: space-between;
+                align-items: center;
+                color: #523737;
+                height: 48px;
+                font-size: 10px;
+            }
+                .menu25 {
+                    display: flex;
+                    width: 25%;
+                    text-align: center;
+                    flex-direction: column;
+                }
+            
+                .tabbutton_container {
+                    font-size: 24px;
+                    padding: 4px;
+                }
+        </style>
+    </head>
+    <body>
+        <div class="status">
+            <div class="menu33 menu1">
+                <i class="fas fa-plane"></i>
+                <i class="fas fa-wifi"></i>
+            </div>
+
+            <div class="menu33 menu2">
+                02:55
+            </div>
+
+            <div class="menu33 menu3">
+                <i class="fas fa-moon"></i>
+                <i class="fab fa-bluetooth-b"></i>
+                <span>100%</span>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+            
+        <div class="app-bar">
+            <div class="menu33 button1">
+                <span class="inactive">Manage</span>
+            </div>
+
+            <div class="menu33 button2">
+               <span>Friends</span> <font color="yellow">1</font>
+            </div>
+
+            <div class="menu33 button3">
+                <i class="fas fa-cog"></i>
+            </div>
+        </div>
+        <div class="tab-bar">
+            <div class="menu25">
+                <span class="tabbutton_container">
+                    <i class="fas fa-user"></i>
+                </span>
+                <span>친구</span>
+            </div>
+
+            <div class="menu25 inactive">
+               <span class="tabbutton_container">
+                   <i class="far fa-comment"></i>
+                </span>
+                <span>채팅</span>
+            </div>
+
+            <div class="menu25 inactive">
+                <span class="tabbutton_container">
+                    <i class="far fa-file-alt"></i>
+                </span>
+                <span>채널</span>
+            </div>
+            
+            <div class="menu25 inactive">
+                <span class="tabbutton_container">
+                    <i class="fas fa-ellipsis-h"></i>
+                </span>
+                <span>더보기</span>
+            </div>
+        </div>
+    </body>
+</html>

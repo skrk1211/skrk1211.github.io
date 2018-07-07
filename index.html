@@ -1,106 +1,139 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Friends</title>
-</head>
-<body>
-    <header class="top-header">
-        <div class="header__top">
-            <div class="header__column">
-                <i class="fa fa-plane" aria-hidden="true"></i>
-                <i class="fa fa-wifi"></i>
+<html>
+    <head>
+    <title>Hello world!</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <style>
+            
+            .status {
+                display: flex;
+                background: #523737;
+                justify-content: space-between;
+                align-items: center;
+                color: #fff;
+                height: 40px;
+                padding: 0px 8px;
+            }  
+            
+                .menu33 {
+                    width: 33%;
+                }
+
+                .menu2 {
+                    text-align: center;
+                }
+
+                .menu3 {
+                    text-align: right;
+                }
+            
+            .app-bar {
+                display: flex;
+                background: #523737;
+                justify-content: space-between;
+                align-items: center;
+                color: #fff;
+                height: 40px;
+                padding: 0px 16px;
+                font-size: 20px;
+            }  
+                .inactive {
+                    opacity: 0.4;
+                }
+
+                .button2 {
+                    text-align: center;
+                }
+
+                .button3 {
+                    text-align: right;
+                }
+            
+            
+            .tab-bar {
+                display: flex;
+                background: #fafafa;
+                /*왜 안되는거임? ㅡㅅㅡ*/border-top: 10px;
+                justify-content: space-between;
+                align-items: center;
+                color: #523737;
+                height: 48px;
+                font-size: 10px;
+            }
+                .menu25 {
+                    display: flex;
+                    width: 25%;
+                    text-align: center;
+                    flex-direction: column;
+                }
+            
+                .tabbutton_container {
+                    font-size: 24px;
+                    padding: 4px;
+                }
+        </style>
+    </head>
+    <body>
+        <div class="status">
+            <div class="menu33 menu1">
+                <i class="fas fa-plane"></i>
+                <i class="fas fa-wifi"></i>
             </div>
-            <div class="header__column">
-                <span class="header__time">18:38</span>
+
+            <div class="menu33 menu2">
+                02:55
             </div>
-            <div class="header__column">
-                <i class="fa fa-moon-o"></i>
-                <i class="fa fa-bluetooth-b"></i>
-                <span class="header__battery">66% <i class="fa fa-battery-full"></i></span>
+
+            <div class="menu33 menu3">
+                <i class="fas fa-moon"></i>
+                <i class="fab fa-bluetooth-b"></i>
+                <span>100%</span>
+                <i class="fas fa-battery-full"></i>
             </div>
         </div>
-        <div class="header__bottom">
-            <div class="header__column">
-                <span class="header__text">Manage</span>
+            
+        <div class="app-bar">
+            <div class="menu33 button1">
+                <span class="inactive">Manage</span>
             </div>
-            <div class="header__column">
-                <span class="header__text">Friends <span class="header__number">1</span></span>
+
+            <div class="menu33 button2">
+               <span>Friends</span> <font color="yellow">1</font>
             </div>
-            <div class="header__column">
-                <i class="fa fa-cog fa-lg"></i>
+
+            <div class="menu33 button3">
+                <i class="fas fa-cog"></i>
             </div>
         </div>
-    </header>
-    <main class="friends">
-        <div class="search-bar">
-            <i class="fa fa-search"></i>
-            <input type="text" placeholder="Finds friends, chats, Plus friends">
-        </div>
-        <section class="friends__section">
-            <header class="friends__section-header">
-                <h6 class="friends__section--title">My Profile</h6>
-            </header>
-            <div class="friends__section-rows">
-                <div class="friends__section-row">
-                    <a href="profile.html">  
-                        <img src="images/avatar.jpg" class="friends__section-name" alt="profile-image">
-                    </a>                         
-                    <span id="zzolain">Zzolain</span>
-                    
-                </div>
-                <div class="friends__section-row">
-                    <img src="images/avatar.jpg" class="friends__section-name" alt="profile-image">
-                    Friends' Names Display
-                </div>
-            </div>
-        </section>
-        <section class="friends__friend-section">
-            <header class="friends__section-header">
-                <h6 class="friends__section--title">Friends</h6>
-            </header>
-            <div class="friends__section-rows">
-                <div class="friends__section-row with-tagline">
-                    <div class="friends__section-column">
-                        <img src="images/avatar.jpg" class="friends__section-name" alt="profile-image">
-                        Yu
-                    </div>
-                    <span class="friends__section-tagline">
-                        mengmengda!
-                    </span>
-                </div>
-            </div>
-        </section>
-    </main>
-    <nav class="tab-bar">
-        <a href="index.html" class="tab-bar__tab tab-bar__tab--selected">
-            <i class="fa fa-user"></i>
-            <span class="tab-bar__title">Friends</span>
-        </a>
-        <a href="chats.html" class="tab-bar__tab">
-            <i class="fa fa-comment"></i>
-            <span class="tab-bar__title">Chats</span>
-        </a>
-        <a href="find.html" class="tab-bar__tab">
-            <i class="fa fa-search"></i>
-            <span class="tab-bar__title">Find</span>
-        </a>
-        <a href="more.html" class="tab-bar__tab">
-            <i class="fa fa-ellipsis-h"></i>
-            <span class="tab-bar__title">More</span>
-        </a>
-    </nav>
-    
-    <script>
-      var zzolain = document.getElementById('zzolain');
-      console.log('>>>>>', zzolain)
-      zzolain.onclick = function() {
         
-      }
-    </script>
-</body>
+        
+        <div class="tab-bar">
+            <div class="menu25">
+                <span class="tabbutton_container">
+                    <i class="fas fa-user"></i>
+                </span>
+                <span>친구</span>
+            </div>
+
+            <div class="menu25 inactive">
+               <span class="tabbutton_container">
+                   <i class="far fa-comment"></i>
+                </span>
+                <span>채팅</span>
+            </div>
+
+            <div class="menu25 inactive">
+                <span class="tabbutton_container">
+                    <i class="far fa-file-alt"></i>
+                </span>
+                <span>채널</span>
+            </div>
+            
+            <div class="menu25 inactive">
+                <span class="tabbutton_container">
+                    <i class="fas fa-ellipsis-h"></i>
+                </span>
+                <span>더보기</span>
+            </div>
+        </div>
+    </body>
 </html>

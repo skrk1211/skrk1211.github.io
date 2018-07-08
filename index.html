@@ -47,12 +47,31 @@
                 .button3 {
                     text-align: right;
                 }
+            .search-bar {
+            align-items: center;
+            }
             
+            .search {
+                border: none;
+                background: #fafafa;
+                width: 80%;
+                height: 40px;
+                text-align: center;
+                
+            }
+            
+            .search::placeholder {
+                color: #ddd;
+            }
             
             .tab-bar {
                 display: flex;
                 background: #fafafa;
-                /*왜 안되는거임? ㅡㅅㅡ*/border-top: 10px;
+                position: absolute;
+                left:0;
+                right:0;
+                bottom: 0;
+                border-top: 1px #eee solid;
                 justify-content: space-between;
                 align-items: center;
                 color: #523737;
@@ -73,6 +92,7 @@
         </style>
     </head>
     <body>
+    <!--스테이터스바랑 앱바임-->
         <div class="status">
             <div class="menu33 menu1">
                 <i class="fas fa-plane"></i>
@@ -105,7 +125,14 @@
             </div>
         </div>
         
+    <!--여기부터는 컨텐츠내용임-->     
+        <div class="friends">
+            <div class="search-bar">
+                <input class="search" type="search" placeholder="Finds friends, chats, Plus friends">
+            </div>
+        </div>
         
+    <!--여기부터는 하단탭바임-->
         <div class="tab-bar">
             <div class="menu25">
                 <span class="tabbutton_container">

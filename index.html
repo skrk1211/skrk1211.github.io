@@ -3,7 +3,8 @@
     <title>Hello world!</title>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
         <style>
-            
+
+/*스테이터스 바*/
             .status {
                 display: flex;
                 background: #523737;
@@ -13,7 +14,9 @@
                 height: 40px;
                 padding: 0px 8px;
             }  
+/*스테이터스 바 끝*/
             
+/*     앱바     */
                 .menu33 {
                     width: 33%;
                 }
@@ -47,8 +50,15 @@
                 .button3 {
                     text-align: right;
                 }
+/*     앱바 끝     */  
+          
+/*서치인풋 관련*/
             .search-bar {
-            align-items: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+               
             }
             
             .search {
@@ -56,13 +66,15 @@
                 background: #fafafa;
                 width: 80%;
                 height: 40px;
-                text-align: center;
-                
-            }
+                text-align: center;            
+                }
             
-            .search::placeholder {
-                color: #ddd;
+            input:focus {
+                outline: none;
             }
+/*     서치인풋 끝       */
+            
+/*      탭바 관련       */
             
             .tab-bar {
                 display: flex;
@@ -77,7 +89,7 @@
                 color: #523737;
                 height: 48px;
                 font-size: 10px;
-            }
+                }
                 .menu25 {
                     display: flex;
                     width: 25%;
@@ -89,6 +101,8 @@
                     font-size: 24px;
                     padding: 4px;
                 }
+            
+/*     탭바 관련 끝       */
         </style>
     </head>
     <body>
@@ -127,8 +141,10 @@
         
     <!--여기부터는 컨텐츠내용임-->     
         <div class="friends">
-            <div class="search-bar">
-                <input class="search" type="search" placeholder="Finds friends, chats, Plus friends">
+            <div class="container-search">
+                <div class="search-bar">
+                    <input class="search" type="search" placeholder="Finds friends, chats, Plus friends">
+                </div>
             </div>
         </div>
         

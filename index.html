@@ -53,24 +53,54 @@
 /*     앱바 끝     */  
           
 /*서치인풋 관련*/
-            .search-bar {
+            .container-search {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
+                
                
             }
+            .search-bar {
+                width: 90%;
+                margin: 8px;
+                
+            }
             
+            .magnifier {
+                position: absolute;
+                margin-top: 14px;
+                margin-left: 16px;
+                font-size: 14px;
+                color: #ddd;
+            }
             .search {
+                display: block;
                 border: none;
                 background: #fafafa;
-                width: 80%;
+                width: 100%;
                 height: 40px;
-                text-align: center;            
+                padding-left: 40px;
+                font-size: 12px;
+                color: #523737;
                 }
+            
             
             input:focus {
                 outline: none;
+                color: #523737;
+            }
+            
+a
+            magnifier:focus {
+                color: #523737;
+            }
+            
+             .search::placeholder {
+                color: #ddd;
+                text-align: left;
+                font-size: 12px;
+                
             }
 /*     서치인풋 끝       */
             
@@ -139,10 +169,11 @@
             </div>
         </div>
         
-    <!--여기부터는 컨텐츠내용임-->     
+    <!--여기부터는 컨텐츠내용임-->    
         <div class="friends">
             <div class="container-search">
                 <div class="search-bar">
+                  <div class="magnifier"><i class="fas fa-search"></i></div>
                     <input class="search" type="search" placeholder="Finds friends, chats, Plus friends">
                 </div>
             </div>
